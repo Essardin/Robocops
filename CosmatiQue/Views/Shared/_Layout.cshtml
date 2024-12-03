@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CosmatiQue</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" asp-append-version="true">
+   @*  <link rel="stylesheet" href="~/ECommerce_MVC.styles.css" asp-append-version="true" /> *@
+</head>
+<body>
+
+
+
+
+
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom" >
+        <div class="container-fluid p-2 ps-5 pe-5" >
+            <a class="navbar-brand me-5 brand-poppin"  asp-controller="Home" asp-action="Index">CosmatiQue</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" >
+                <div class="offcanvas-header">
+                    <h4 class="offcanvas-title">CosmatiQue</h4>
+                       @*  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> *@
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" 
+                        aria-label="Close"></button>
+                </div>
+
+
+                <div class="offcanvas-body" >
+                        <div class="order-md-last">
+                            <ul class="navbar-nav ms-1" id="account">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/shop"><i class="fa fa-shopping-cart"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/account"><i class="fa fa-user"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                   
+                        <ul class="navbar-nav me-auto ms-2 ">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Product" asp-action="Products">SHOP ALL</a>
+
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">MAKEUP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SKIN CARE</a>
+                            </li>
+                        </ul>
+                       
+                        <div class="d-flex me-5">
+                            <ul class="navbar-nav ms-2">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Home" asp-action="Contact">CONTACT</a>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                      
+                </div>
+
+            </div>
+
+
+
+
+
+            @* <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+            </div> *@
+        </div>
+    </nav>
+    </header>
+
+
+
+
+        @RenderBody()
+
+    
+
+  
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+ 
+</body>
+</html>

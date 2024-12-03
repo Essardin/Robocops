@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CosmatiQue ADMIN</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" asp-append-version="true">
+
+</head>
+<body>
+<header>
+    <div class="navbar navbar-expand-md navbar-light bg-dark bg-opacity-50">
+        <div class="container-fluid px-4">
+        <span class="navbar-brand brand-poppin me-5">CosmatiQue</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#canvasDiv" aria-controls="canvasDiv" aria-label="Toggle Navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="1" id="canvasDiv">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">CosmatiQue</h5>
+                <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">HOME</a>
+                     </li>
+                     <li>
+                         <a class="nav-link" asp-controller="Admin" asp-action="Store">STORE</a>
+                     </li>
+                </ul>
+
+                        <div class="d-flex me-5">
+                            <ul class="navbar-nav ms-2" >
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li class="dropdown-item">
+                                            <a class="dropdown-item" href="#">Log Out</a>
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+            </div>
+        </div>
+            </div>
+    </div>
+</header>
+
+   
+        @RenderBody()
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

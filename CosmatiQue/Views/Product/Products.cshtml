@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewData["Title"] = "Products";
+}
+
+
+<section>
+
+    <div class="img-fluid custom-header-img-default">
+   
+        </div>
+
+</section>
+
+<div class="container-fluid px-lg-4">
+
+    <div class="row py-5">
+        <div class="col-md-3">
+            <div class="row p-2">
+                <div class="col-md-12 col-sm-6 p-3 mb-4 bg-secondary bg-opacity-25">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Products..."/>
+                        <button class="btn custom-btn-primary ms-2 border-0"><i class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-6 p-3 py-4 pb-5 bg-secondary bg-opacity-25">
+                    <h4>Filter by price</h4>
+                    <div class="input-group price-field">
+                       @*  <input type="range" class="form-range custom-range" min="1" max="5000" /> *@
+                        <input type="range" class="form-range" min="100" max="500" value="100" id="lower">
+                        <input type="range" class="form-range" min="100" max="500" value="500" id="upper">
+                    </div>
+                    <div class="mt-5">
+                        <span> <i class="fa fa-inr"></i> <label>100</label></span>
+                        <span class="float-end"> <i class="fa fa-inr"></i> <label>500</label></span>
+                    </div>
+                   
+                    <button class="mt-5 float-end btn custom-btn-primary">Apply</button>
+                </div>
+
+                <div class="col-md-12 bg-secondary bg-opacity-25">
+
+                </div>
+            </div>
+           
+        </div>
+        <div class="col-md-8 offset-md-1">
+            <div class="row">
+                <div class="col">
+                    <span class="fw-bold">Showing 1–12 of 31 results</span>
+                    <select class="form-select float-end w-50">
+                        <option>Sort by Popularity</option>
+                        <option>Sort by Latest</option>
+                        <option>Sort by Rating</option>
+                        <option>Sort by Price: low to hign</option>
+                        <option>Sort by Price: high to low</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <a href="ProductDetails">  <img class="card-img-top" src="/images/card4.jpg" alt="" /></a>
+                        <div class="card-body">
+                            <p class="card-subtitle text-muted pb-2">Category</p>
+                            <a href="ProductDetails" class=" link-dark text-decoration-none"><h5 class="card-title text-uppercase">Product Name</h5></a>
+                            <p class="card-text">100 INR</p>
+                            <div class="popover bg-light bg-opacity-75">
+                                <a class="btn float-end"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <a href="ProductDetails"> <img class="card-img-top" src="~/images/card5.jpg" /></a>
+                        <div class="card-body">
+                            <p class="card-subtitle text-muted pb-2">Category</p>
+                            <a href="ProductDetails" class=" link-dark text-decoration-none"><h5 class="card-title text-uppercase">Product Name</h5></a>
+                            <p class="card-text">100 INR</p>
+                            <div class="popover bg-light bg-opacity-75">
+                                <a class="btn float-end"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <div class="card">
+                        <a href="#"> <img class="card-img-top" src="~/images/card6.jpg" /></a>
+                        <div class="card-body">
+                            <p class="card-subtitle text-muted pb-2">Category</p>
+                            <a href="#" class=" link-dark text-decoration-none"><h5 class="card-title text-uppercase">Product Name</h5></a>
+                            <p class="card-text">100 INR</p>
+                            <div class="popover bg-light bg-opacity-75">
+                                <a class="btn float-end"><i class="fa fa-heart-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

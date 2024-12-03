@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue: #269fb7;
+}
+.custom-txt-primary{
+    color: var(--blue);
+}
+
+body {
+    font-family: "Poppins", system-ui;
+    
+}
+.brand-poppin{
+    font-family:"Poppins", system-ui;
+    font-size:33px;
+}
+.mask-custom {
+   /* backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(1px);*/
+    background-color: rgb(0, 0, 0, 0.66);
+    
+}
+#intro {
+    background-image: url("/images/header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    .mask
+
+{
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.66);
+    width: 100%;
+}
+}
+
+.navbar{
+
+    a{
+         color:white !important;
+         font-weight:500;
+     }
+     button{
+         color:white !important;
+     }
+}
+
+.custom-bigger-font {
+    font-size: 4.5em;
+    font-weight: 600;
+    letter-spacing: .10em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.anim-typewriterh3 {
+    letter-spacing: .10em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.anim-typewriterh3 {
+    animation: typewriter 6s steps(44) 4s 1 normal both, blinkTextCursor 1000ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255,255,255,.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+.custom-header-img {
+    background-image: url("/images/contact.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    max-height: 300px;
+    background-color: rgb(0, 0, 0, 0.66);
+    background-blend-mode:overlay;
+
+   
+.custom-header-title {
+    height:inherit; 
+    z-index:9;
+    color:white;
+}
+}
+
+
+.card {
+    overflow: hidden;
+    img
+
+{
+    max-height: 240px;
+    transition: all 0.5s linear;
+}
+
+&:hover img {
+    transform: scale(1.1) rotate(1deg);
+}
+
+}
+
+iframe{
+    min-height:50vh;
+}
+.custom-btn-primary{
+    background-color:var(--blue);
+    color:white;
+
+    &:hover{
+               background-color:#269fb7ca;
+               color:whitesmoke;
+           }
+}
+
+
+
+
+/*PRODUCTS PAGE*/
+
+.custom-header-img-default {
+    background-image: url("/images/unt1.jpg");
+    background-size: ;
+    background-attachment: fixed;
+    height: 150px;
+    max-height: 150px;
+    background-color: rgb(0, 0, 0, 0.66);
+    background-blend-mode: overlay;
+}
+
+
+
+    .price-field input[type=range] {
+        position: absolute;
+    }
+
+
+        /* Style toddler input range */
+
+        .price-field input[type=range]::-webkit-slider-thumb {
+            /* WebKit/Blink */
+            position: relative;
+            -webkit-appearance: none;
+           
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            margin-top: -6px;
+           
+            pointer-events: all;
+            z-index: 100;
+        }
+
+        .price-field input[type=range]::-moz-range-thumb {
+            /* Firefox */
+            position: relative;
+            -webkit-appearance: none;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            margin-top: -6px;
+            pointer-events: all;
+            z-index: 100;
+        }
+
+        .price-field input[type=range]::-ms-thumb {
+            /* IE */
+            position: relative;
+            -webkit-appearance: none;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            margin-top: -6px;
+            pointer-events: all;
+            z-index: 100;
+        }
+
+
+
+
+        .price-field input[type=range]::-webkit-slider-runnable-track {
+            background: gray;
+        }
+
+        .price-field input[type=range]::-moz-progress-bar {
+            background: gray;
+        }
+
+        .price-field input[type=range]::-ms-track {
+            background: gray;
+        }
+
+/* PRODUCTS PAGE*/
+@media (max-width: 992px) {
+    .navbar {
+        a{
+             color:black!important;
+         }
+
+
+         #account{
+             display:inline-box !important;
+             display:-webkit-box;
+            padding-left:80%;
+             
+
+             li{
+                   padding-right:20px;
+                   
+                   right:0;
+
+                   i{
+                        font-size:20px;
+                    }
+               }
+         }
+    }
+
+
+#intro {
+    background-image: url("/images/header-md.jpg");
+    
+}
+    .custom-bigger-font {
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: .08em;
+    
+}
+.anim-typewriterh3 {
+    letter-spacing: .10em;
+    font-size:1.5em;
+}
+}
+
+
+@media(max-width:768px)
+{
+    .custom-bigger-font {
+        font-size: 2em;
+        font-weight: 500;
+        
+    }
+
+    .anim-typewriterh3 {
+       font-size:1em;
+    }
+}

@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "ProductDetails";
+}
+
+<section>
+    <div class="custom-header-img-default">
+
+    </div>
+</section>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="img-thumbnail">
+                <img class="card-img" src="/images/card4.jpg" />
+            </div>
+            
+
+        </div>
+        <div class="col-md-7">
+            <div class="mt-4 ps-2">
+                <h5 class="text-black pb-2">category</h5>
+                <h3 class="py-2">Product Name</h3>
+                <h4> <span class="pe-3"><i class="fa fa-inr"></i> 100</span>  <span class="text-muted text-decoration-line-through">MRP <i class="fa fa-inr"></i>200</span></h4>
+
+                <div class="mt-5">
+
+
+                <div class="input-group pt-3">
+                    <span class="">
+                        <button id="quantity-minus" class="btn border-1 border-danger rounded-0 rounded-start">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </span>
+                    <input id="quantity" type="number" value="1" class="text-center input-group-sm border-1 border-dark border-end-0 border-start-0" style="width:50px!important;"/>
+                    <span class="me-5">
+                        <button id="quantity-plus" class="btn border-1 border-success rounded-0 rounded-end">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </span>
+                
+
+               
+                    
+                <a class="btn custom-btn-primary me-3 rounded-3"><i class="fa fa-shopping-bag pe-2"> </i> ADD TO BAG</a>
+                <a class="btn border-1 border-secondary rounded-3 "><i class="fa fa-heart-o pe-2"> </i> WISHLIST</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let textBox = document.getElementById("quantity")
+    
+
+    document.getElementById("quantity-plus").addEventListener("click", function () {
+        let quantity = parseInt(textBox.value)
+        quantity +=  1
+        textBox.value = quantity
+    });
+
+    document.getElementById("quantity-minus").addEventListener("click", function () {
+        let quantity = parseInt(textBox.value)
+        quantity -= 1
+        if (quantity > 0) { 
+            textBox.value = quantity
+        }
+        else{
+            quantity === 1
+        }
+        
+
+    });
+</script>
+
